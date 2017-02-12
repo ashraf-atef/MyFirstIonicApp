@@ -8,15 +8,17 @@ import { NavController, NavParams } from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-page2',
+  selector: 'page-page2' ,
   templateUrl: 'page2.html'
 })
-export class Page2Page {
+export class Page2 {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.items = ['javaSe', 'Android', 'RestWS'];
+  }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Page2Page');
+    console.log('ionViewDidLoad Page2');
   }
 
 }

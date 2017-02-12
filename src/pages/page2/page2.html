@@ -13,18 +13,18 @@
 </ion-header>
 
 
-<ion-content class="getting-started">
+<ion-content class="Page2">
+	
+	<ion-list>
 
-  <h3>Welcome to your first Ionic app!</h3>
+		<ion-list-header>
+			This is my skils
+		</ion-list-header>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button primary menuToggle>Toggle Menu</button>
-  </p>
+		<ion-item *ngFor="#item for items">
+			{{item}}
+		</ion-item>
+
+	</ion-list>
 
 </ion-content>
