@@ -12,9 +12,10 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'page2.html'
 })
 export class Page2 {
- 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
 
+  items: string[]=[];
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.items = ['javaSe', 'Android', 'RestWS'];
   }
 
   ionViewDidLoad() {
